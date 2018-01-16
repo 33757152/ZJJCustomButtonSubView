@@ -13,6 +13,8 @@
 		89B503ED200DB092003A66AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B503EC200DB092003A66AF /* Assets.xcassets */; };
 		89B503F0200DB092003A66AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B503EE200DB092003A66AF /* LaunchScreen.storyboard */; };
 		89B503F3200DB092003A66AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B503F2200DB092003A66AF /* main.m */; };
+		89B503FB200DB0F2003A66AF /* ZJJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B503FA200DB0F2003A66AF /* ZJJButton.m */; };
+		89B503FD200DB1A9003A66AF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B503FC200DB1A9003A66AF /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		89B503EF200DB092003A66AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B503F1200DB092003A66AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89B503F2200DB092003A66AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89B503F9200DB0F2003A66AF /* ZJJButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJJButton.h; sourceTree = "<group>"; };
+		89B503FA200DB0F2003A66AF /* ZJJButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJJButton.m; sourceTree = "<group>"; };
+		89B503FC200DB1A9003A66AF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 		89B503E2200DB092003A66AF /* ZJJCustomButtonSubView */ = {
 			isa = PBXGroup;
 			children = (
+				89B503F9200DB0F2003A66AF /* ZJJButton.h */,
+				89B503FA200DB0F2003A66AF /* ZJJButton.m */,
+				89B503FC200DB1A9003A66AF /* 1.png */,
 				89B503E3200DB092003A66AF /* AppDelegate.h */,
 				89B503E4200DB092003A66AF /* AppDelegate.m */,
 				89B503E6200DB092003A66AF /* ViewController.h */,
@@ -130,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B503F0200DB092003A66AF /* LaunchScreen.storyboard in Resources */,
+				89B503FD200DB1A9003A66AF /* 1.png in Resources */,
 				89B503ED200DB092003A66AF /* Assets.xcassets in Resources */,
 				89B503EB200DB092003A66AF /* Main.storyboard in Resources */,
 			);
@@ -142,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B503FB200DB0F2003A66AF /* ZJJButton.m in Sources */,
 				89B503E8200DB092003A66AF /* ViewController.m in Sources */,
 				89B503F3200DB092003A66AF /* main.m in Sources */,
 				89B503E5200DB092003A66AF /* AppDelegate.m in Sources */,
