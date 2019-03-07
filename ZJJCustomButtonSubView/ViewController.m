@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ZJJButton.h"
+#import "ChangeLocationView.h"
 
 @interface ViewController ()
 
@@ -18,30 +18,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    ZJJButton *button = [[ZJJButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100) withType:0];
-    [button setImage:[UIImage imageNamed:@"1"] forState:UIControlStateNormal];
-    [button setTitle:@"come go" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(comeOut) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    [self creatView];
+    [self button1];
+    [self button2];
+    [self button3];
 }
 
-- (void)creatView {
-    ZJJButton *button = [[ZJJButton alloc] initWithFrame:CGRectMake(100, 300, 100, 40) withType:1];
-    [button setImage:[UIImage imageNamed:@"1"] forState:UIControlStateNormal];
-    [button setTitle:@"buybuy.." forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(comeOutRight) forControlEvents:UIControlEventTouchUpInside];
+- (void)button1 {
+    UIButton *button = [self creatButton];
+    button.frame = CGRectMake(50, 60, 60, 60);
+    [ChangeLocationView changeButton:button location:ButtonLocation1 spacing:3];
     [self.view addSubview:button];
 }
 
-- (void)comeOut {
-    NSLog(@"uuuuuuu......");
+- (void)button2 {
+    UIButton *button = [self creatButton];
+    button.frame = CGRectMake(50, 170, 60, 60);
+    [ChangeLocationView changeButton:button location:ButtonLocation2 spacing:3];
+    [self.view addSubview:button];
 }
 
-- (void)comeOutRight {
-    NSLog(@"rrrrrr......");
+- (void)button3 {
+    UIButton *button = [self creatButton];
+    button.frame = CGRectMake(50, 280, 60, 60);
+    [ChangeLocationView changeButton:button location:ButtonLocation3 spacing:3];
+    [self.view addSubview:button];
+}
+
+- (UIButton *)creatButton {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor cyanColor];
+    [button setTitle:@"ok" forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"1"] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    return button;
 }
 
 - (void)didReceiveMemoryWarning {

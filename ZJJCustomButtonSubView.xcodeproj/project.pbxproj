@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		788184B32230ADC800C136C8 /* ChangeLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 788184B22230ADC800C136C8 /* ChangeLocationView.m */; };
 		89B503E5200DB092003A66AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B503E4200DB092003A66AF /* AppDelegate.m */; };
 		89B503E8200DB092003A66AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B503E7200DB092003A66AF /* ViewController.m */; };
 		89B503EB200DB092003A66AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B503E9200DB092003A66AF /* Main.storyboard */; };
 		89B503ED200DB092003A66AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B503EC200DB092003A66AF /* Assets.xcassets */; };
 		89B503F0200DB092003A66AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B503EE200DB092003A66AF /* LaunchScreen.storyboard */; };
 		89B503F3200DB092003A66AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B503F2200DB092003A66AF /* main.m */; };
-		89B503FB200DB0F2003A66AF /* ZJJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B503FA200DB0F2003A66AF /* ZJJButton.m */; };
 		89B503FD200DB1A9003A66AF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B503FC200DB1A9003A66AF /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		788184B12230ADC800C136C8 /* ChangeLocationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeLocationView.h; sourceTree = "<group>"; };
+		788184B22230ADC800C136C8 /* ChangeLocationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeLocationView.m; sourceTree = "<group>"; };
 		89B503E0200DB092003A66AF /* ZJJCustomButtonSubView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJJCustomButtonSubView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B503E3200DB092003A66AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89B503E4200DB092003A66AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,8 +30,6 @@
 		89B503EF200DB092003A66AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B503F1200DB092003A66AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89B503F2200DB092003A66AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		89B503F9200DB0F2003A66AF /* ZJJButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJJButton.h; sourceTree = "<group>"; };
-		89B503FA200DB0F2003A66AF /* ZJJButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJJButton.m; sourceTree = "<group>"; };
 		89B503FC200DB1A9003A66AF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,13 +63,13 @@
 		89B503E2200DB092003A66AF /* ZJJCustomButtonSubView */ = {
 			isa = PBXGroup;
 			children = (
-				89B503F9200DB0F2003A66AF /* ZJJButton.h */,
-				89B503FA200DB0F2003A66AF /* ZJJButton.m */,
 				89B503FC200DB1A9003A66AF /* 1.png */,
 				89B503E3200DB092003A66AF /* AppDelegate.h */,
 				89B503E4200DB092003A66AF /* AppDelegate.m */,
 				89B503E6200DB092003A66AF /* ViewController.h */,
 				89B503E7200DB092003A66AF /* ViewController.m */,
+				788184B12230ADC800C136C8 /* ChangeLocationView.h */,
+				788184B22230ADC800C136C8 /* ChangeLocationView.m */,
 				89B503E9200DB092003A66AF /* Main.storyboard */,
 				89B503EC200DB092003A66AF /* Assets.xcassets */,
 				89B503EE200DB092003A66AF /* LaunchScreen.storyboard */,
@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					89B503DF200DB092003A66AF = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -151,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B503FB200DB0F2003A66AF /* ZJJButton.m in Sources */,
 				89B503E8200DB092003A66AF /* ViewController.m in Sources */,
+				788184B32230ADC800C136C8 /* ChangeLocationView.m in Sources */,
 				89B503F3200DB092003A66AF /* main.m in Sources */,
 				89B503E5200DB092003A66AF /* AppDelegate.m in Sources */,
 			);
@@ -288,11 +288,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KU46YZSG72;
 				INFOPLIST_FILE = ZJJCustomButtonSubView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.it.ZJJCustomButtonSubView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtayqria.buttonSub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ZJJAllProjectTestDevProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,11 +304,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KU46YZSG72;
 				INFOPLIST_FILE = ZJJCustomButtonSubView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.it.ZJJCustomButtonSubView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtayqria.buttonSub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ZJJAllProjectTestDevProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
